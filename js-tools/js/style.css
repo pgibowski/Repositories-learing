@@ -1,0 +1,46 @@
+.comment{
+    border:2px solid red;
+    background-color: silver;
+    font-size: large;
+    font-stretch: extra-expanded;
+}
+
+
+#form{
+    border:3px solid blue;
+    border-radius: 5px;
+    /*tworzę zaokrąglone rogi*/
+}
+
+
+p.intro {
+    font-weight: bold;
+}
+
+
+.intro.first {font-weight: bold;}
+div.intro {color: aqua;}
+
+.head,.content {color: blueviolet; font-size: x-large;
+}
+
+
+
+div p {border:10px solid violet}
+section > div > p {font-style: italic;}
+
+/*Selektor rodzeństwa*/
+.curr ~ li {text-decoration: underline; color: red;}
+
+/*Sąsiedni selektor rodzeństwa*/
+.curr + li {font-size: 200%  ;}
+
+/*obramowanie żółte otrzyma
+tylko ostatni element <article>, ponieważ
+występuje on bezpośrednio za elementem
+o klasie .new.*/
+.new + article {border:3px solid yellow}
+
+[title] {
+    text-shadow: 2px 2px green;
+}
