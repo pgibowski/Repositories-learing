@@ -41,6 +41,7 @@ występuje on bezpośrednio za elementem
 o klasie .new.*/
 .new + article {border:3px solid yellow}
 
+/*Selektor atrybutów*/
 [title] {
     text-shadow: 2px 2px green;
 }
