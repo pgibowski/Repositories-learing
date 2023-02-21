@@ -86,7 +86,7 @@ p:last-child {
     }
     p a[href]::after{
         content: '';
-       
+        display:inline-block;
         margin: left 5px;
         border: 7px solid transparent;
         border-left-color: green;
@@ -101,3 +101,4 @@ p:last-child {
         content:'after';
         border: 1px solid red;
     }
+    
