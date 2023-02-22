@@ -13,10 +13,17 @@
     background-color: rgba(255, 0, 0);
     opacity: .5;
 }
+
+/**
 .bg-image {
-    background-image: url('./logo.png');
+    background-image: url('/repositories/img/bikes.jpg');
     background-color: gray;
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: bottom right;
     }
+    **/
+
+.bg-image {
+    background: gray url('/repositories/img/bikes.jpg') center/ auto 85% space;
+}
