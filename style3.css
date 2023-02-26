@@ -1,0 +1,175 @@
+.building {
+    background-color: azure;
+    font-size: 100px;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+}
+
+.box1 {background: gray;}
+.box2 {background: rgba(255, 220, 205, 1);}
+.box3 {background: red;}
+.box4 {background: purple;}
+.box5 {background: orangered;}
+.box6 {background: black;}
+.box7 {background: blue;}
+.box8 {background: palevioletred;}
+.box9 {background: brown;}
+.box10 {background: rgb(150, 150, 150);}
+
+/**
+.building {
+    display: flex;
+    border: 20px solid goldenrod;
+    justify-content: space-b;
+    flex-direction: column;
+    min-height:200vh;
+  
+}
+**/
+/*
+.building {
+    display: flex;
+    border: 20px solid brown;
+    min-height: 150vh;
+    justify-content: flex-start;   
+    flex-wrap: wrap; 
+    
+}
+*/
+.box {
+    min-width: 20px;
+    height: auto;
+}
+/* order 1 kieruje wybrany element w prawą stronę (pierwszy od prawej. Jeśli będzie dodany kolejny element np order 2 to ten z kolei będzie pierwszy od prawej, a zaraz za nim element z numerem 1. Analogicznie w przypadku wartości ujemnych (lewa strona)*/
+/*
+    .box2 {
+        order: 1;
+    }
+    .box4 {
+        order: 2
+    }
+    .box7 {
+        order:-1
+    }
+*/
+
+/*
+.building {
+    display: flex;
+    border: 20px solid brown;
+    align-items: baseline;
+       height: 100vh;
+}
+*/
+
+       /*baseline wyrównuje obiekty różnej wielkości do środka osi głównej*/ 
+
+
+/*
+.box1{
+    font-size: 10px;
+}
+.box2 {
+    font-size: 30px;
+}
+.box3 {
+    font-size: 77px;
+}
+.box4 {
+    font-size: 150px;
+}
+.box5 {
+    font-size: 300px;
+}
+.box6 {
+    font-size: 60px;
+
+}
+
+*/
+/* .building {
+    display: flex;
+    border: 20px solid brown;
+    height: 100vh;
+    flex-wrap:wrap;
+    align-content: center;
+    justify-content: center;
+}
+.box {
+    width: 33%;
+} */
+
+/* wykorzystanie align-self
+.building {
+    display: flex;
+    border: 20px solid brown;
+    height: 100vh;
+    align-items: flex-start;
+}
+
+.box {
+    width: 33%;
+    height: auto;
+}
+.box2 {
+    padding-bottom: 200px;
+    align-self: center;
+}
+.box6 {
+    padding-bottom:150px;
+    color: aliceblue;
+    align-self: stretch;
+}
+.box9 {
+    padding-bottom: 50px;
+    align-self: flex-end;
+}
+.box4 {
+    order:1;
+}
+*/
+
+
+.building {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 30px solid goldenrod;
+    height: 100vh;
+}
+/* .box {
+    flex-shrink: 1;
+}  */
+
+/* flex:1 we wszystkich kontenerach box rozciąga elementy na całą szerokość strony */
+/*gdy odwołujemy się do poszczególnych elementów to zabierają one tyle miejsca ile wskazujemy we właściwości flex*/
+
+
+/*flex basis określa stałą szerokość elementu, a w razie zawężania okna ustala równą szerokość dla wszystkich elementów.
+flex-grow rozszerza wybrany element do całej szerokości okna (jeśli są 2 elementy), jeśli jest wolna przestrzeń. W przypadku większej ilości elementów ustalamy proporcje wg uznania
+flex-shrink zmniejsza element o tyle razy ile podamy w wartości, np 10 zmniejszy element 10 razy w razie zawężania okna przeglądarki*/
+
+/*skrótem do wszystkich powyższych jest flex
+pierwsza wartość to grow, druga to shrink a trzecia to basis */
+
+/* .box2 {
+    flex: 2 5 400px;
+}
+.box3 {
+    flex: 2 1 400px;
+}
+.box5 {
+    flex: 2 5 250px;
+} */
+
+.box {
+    flex-basis: 250px;
+    flex: grow 1;
+}
+.box3 {
+    flex-grow: 6;
+}
+.box4 {
+    flex-basis: 100px;
+}
