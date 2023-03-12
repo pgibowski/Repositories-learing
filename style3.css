@@ -171,5 +171,5 @@ pierwsza wartość to grow, druga to shrink a trzecia to basis */
     flex-grow: 6;
 }
 .box4 {
-    flex-basis: 100px;
+    flex-basis: 2500px;
 }
